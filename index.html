@@ -9,6 +9,64 @@
     <title>Pig Dice game</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Pig Dice Game</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="rules">
+        <h2>Here are the rules to the game:</h2>
+        <ul>
+          <li>Only Two Players can play the game</li>
+          <li>Player 1 inputs name and Player 2 inputs name, and clicks start button</li>
+          <li>Player 1 clicks ROLL button and the Dice rolls and number is generated</li>
+          <li>If Player 1 rolls any number other than 1, that roll is added to round total</li>
+          <li>If Player 1 rolls a 1, no score is added and round for Player 1 ends</li>
+          <li>Repeat for Player 2</li>
+          <li>When a player's total score reaches 100 or more, game ends and winner page shows</li>
+        </ul>
+        <h3><em>Let's Play !</em></h3>
+      </div>
+      <div class="players">
+        <div class="row">
+          <div class="col-md-6">
+            <form id="player 1">
+              <div class="form-group">
+                <label for="player1">Enter a name player 1</label>
+                <input type="text" class="form-control" id="player1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <form id="player 2">
+              <div class="form-group">
+                <label for="player1">Enter a name player 2</label>
+                <input type="text" class="form-control" id="player2">
+              </div>
+            </form>
+          </div>
+          <button id="start" class="btn btn-success">Let's Start !</button>
+        </div>
+      </div>
+      <div class="playerconsolecontainer">
+        <div class="row">
+          <div class="col-md-6">
+            <h2><em>Player 1 :</em> <span id="player1"></span></h2>
+            <button id="roll" class="btn btn-danger">Roll Dice</button>
+            <button id="hold" class="btn btn-danger">Hold</button>
+            <p>Round Total : <span id="roundtotal1"></span></p>
+            <p>Total Score : <span id="totalscore1"></span></p>
+          </div>
+          <div class="col-md-6">
+            <h2><em>Player 2 :</em> <span id="player2"></span></h2>
+            <button id="roll" class="btn btn-danger">Roll Dice</button>
+            <button id="hold" class="btn btn-danger">Hold</button>
+            <p>Round Total : <span id="roundtotal2"></span></p>
+            <p>Total Score : <span id="totalscore2"></span></p>
+          </div>
+        </div>
+        <button id="newStart" class="btn btn-info">New Game</button>
+      </div>
 
+    </div>
   </body>
 </html>

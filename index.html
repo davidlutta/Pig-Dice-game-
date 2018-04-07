@@ -2,105 +2,118 @@
 
 <html>
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
 
-    <script src="js/scripts2.js" charset="utf-8"></script>
+  <script src="js/scripts2.js" charset="utf-8"></script>
 
-    <title>Pig Dice game</title>
+  <title>Pig Dice game</title>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="intro">
+  <div class="intro">
 
     <div class="jumbotron">
+
 
       <h1>Pig Dice Game</h1>
 
     </div>
 
-      <div class="rules">
+    <div class="rules">
 
-        <h2>Here are the rules to the game:</h2>
+      <h2>Here are the rules to the game:</h2>
 
-        <ul>
+      <ul class="text-left">
 
-          <li>Only Two Players can play the game</li>
+        <li>Only Two Players can play the game</li>
 
-          <li>Player 1 inputs name and Player 2 inputs name, and clicks start button</li>
+        <li>Player 1 inputs name and Player 2 inputs name, and clicks start button</li>
 
-          <li>Player 1 clicks ROLL button and the Dice rolls and number is generated</li>
+        <li>Player 1 clicks ROLL button and the Dice rolls and number is generated</li>
 
-          <li>If Player 1 rolls any number other than 1, that roll is added to round total</li>
+        <li>If Player 1 rolls any number other than 1, that roll is added to round total</li>
 
-          <li>If Player 1 rolls a 1, no score is added and round for Player 1 ends</li>
+        <li>If Player 1 rolls a 1, no score is added and round for Player 1 ends</li>
 
-          <li>Repeat for Player 2</li>
+        <li>Repeat for Player 2</li>
 
-          <li>When a player's total score reaches 100 or more, game ends and winner page shows</li>
+        <li>When a player's total score reaches 100 or more, game ends and winner page shows</li>
 
-        </ul>
+      </ul>
 
-        <h3><em>Let's Play !</em></h3>
+      <h3><em> If you are ready Let's Play !</em></h3>
 
-      </div>
+      <br>
 
-      <div class="players">
+      <br>
 
-        <div class="row">
+      <hr>
 
-          <div class="col-md-6">
+    </div>
 
-            <form id="player 1">
+    <div class="players">
 
-              <div class="form-group">
+      <div class="row">
 
-                <label for="player1">Enter a name player 1</label>
+        <div class="col-md-6">
 
-                <input type="text" class="form-control" id="player1">
+          <form id="player 1">
 
-              </div>
+            <div class="form-group">
 
-            </form>
+              <label for="player1" >Enter a name player 1</label>
 
-          </div>
+              <input type="text" class="form-control" id="player1">
 
-          <div class="col-md-6">
+            </div>
 
-            <form id="player 2">
-
-              <div class="form-group">
-
-                <label for="player1">Enter a name player 2</label>
-
-                <input type="text" class="form-control" id="player2">
-
-              </div>
-
-            </form>
-
-          </div>
-
-          <button id="start" class="btn btn-success">Let's Start !</button>
+          </form>
 
         </div>
+
+        <div class="col-md-6">
+
+          <form id="player 2">
+
+            <div class="form-group">
+
+              <label for="player1">Enter a name player 2 :</label>
+
+              <input type="text" class="form-control" id="player2">
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <br>
+
+        <br>
+
+        <button id="start" class="btn btn-success">Let's Start !</button>
 
       </div>
 
     </div>
 
-      <div class="container-fluid">
+  </div>
 
-      <div class="playerconsolecontainer">
+  <div class="container">
+
+    <div class="playerconsolecontainer">
+
+      <div class="innerContainer">
 
         <div class="row">
 
@@ -138,12 +151,16 @@
 
         </div>
 
+        <h2 class="text-center"> <em>If your total score is more than 100 press the hold button to be declared the winner !</em></h2>
+
         <button id="newStart" class="btn btn-info">New Game</button>
 
       </div>
 
     </div>
 
-  </body>
+  </div>
+
+</body>
 
 </html>
